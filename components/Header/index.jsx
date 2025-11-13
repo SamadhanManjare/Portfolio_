@@ -119,7 +119,7 @@ const ContactButton = ({ isMobile = false, onLinkClick }) => (
             
             className={`${isMobile ? 'w-full' : ''} rounded-2xl font-semibold bg-white text-gray-900 hover:bg-gray-200 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3`}>
                 <span className="hidden sm:inline">GitHub</span>
-                <span className="sm:hidden">Template</span>
+                <span className="sm:hidden">Github</span>
             </Button>
         </Link>
     </motion.div>

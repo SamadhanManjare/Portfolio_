@@ -7,8 +7,10 @@ export const config = {
     },
     social: {
         github: "samadhanmanjare",
-        discord: "#"
+        discord: "#",
+        linkedin: "https://www.linkedin.com/in/samadhan-manjare-889a29260/"
     },
+    resume: "https://drive.google.com/file/d/1G_2j33BvxRbfradOM-CtM8TzFdBS2W84/view?usp=drive_link",
     NAV_ITEMS: [
         { href: '/projects', label: 'Projects' },
         { href: '/contact', label: 'Contact' }

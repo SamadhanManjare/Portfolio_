@@ -2,7 +2,8 @@
 "use client"
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { HiCode, HiArrowRight } from 'react-icons/hi';
+import { HiCode, HiArrowRight, HiArrowDown } from 'react-icons/hi';
+import { FaLinkedin } from 'react-icons/fa';
 import { config } from '@/config';
 import Link from 'next/link';
 import { BackgroundPresets } from '@/components/ui/background-effects';
@@ -77,9 +78,9 @@ const HeroSection = () => {
               </motion.span>
               <motion.span
                 variants={textAnimation}
-                className="block text-white/60 text-2xl md:text-4xl"
+                className="block text-white/60 text-lg md:text-2xl"
               >
-I build web that builds brands.              </motion.span>
+              Full Stack Developer | Java Developer | Software Developer              </motion.span>
             </motion.h1>
           </div>
 
@@ -87,13 +88,43 @@ I build web that builds brands.              </motion.span>
             variants={itemAnimation}
             className="text-base sm:text-md text-muted-foreground leading-relaxed max-w-2xl mx-auto"
           >
-           Full-stack builder creating digital experiences that respect humans and scale with clarity. Accessibility is my north star.
+          👋 Hi, I'm Samadhan Manjare, a B.Tech Computer Engineering graduate from Pune University, passionate about building intuitive and efficient web applications.
+          <br />
+          💼 Currently working as a Frontend Developer Intern at Next Class (EdTech Startup), where I contribute to developing eCommerce and admin panel solutions with React.js. 
+          <br />
+          💡 Skilled in JavaScript, React.js, Python, Java, SQL, HTML5, CSS3, Node.js, and experienced in designing responsive, user-friendly interfaces.
+          <br />
+          🚀 I enjoy solving problems, exploring new technologies, and creating impactful projects.
+          <br />
+          🌱 Always curious and eager to grow, collaborate, and contribute to innovative projects that make a difference.
           </motion.p>
 
           <motion.div
             variants={itemAnimation}
             className="flex flex-wrap gap-4 justify-center pt-6"
           >
+            <a href={config.social.linkedin} target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="expandIcon"
+                Icon={FaLinkedin}
+                iconPlacement="right"
+                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold"
+              >
+                LinkedIn
+              </Button>
+            </a>
+
+               <a href={config.resume} target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="expandIcon"
+                Icon={HiArrowDown}
+                iconPlacement="right"
+                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold"
+              >
+                   View Resume
+              </Button>
+            </a>
+
             <Link href={"/projects"}>
               <Button
                 variant="expandIcon"
