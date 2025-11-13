@@ -3,10 +3,10 @@ import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi"
 
 export const config = {
     developer: {
-        name: "Huzaif",
+        name: "Samadhan",
     },
     social: {
-        github: "huzaifahmedz",
+        github: "samadhanmanjare",
         discord: "#"
     },
     NAV_ITEMS: [
@@ -17,48 +17,48 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "AI-Powered Code Review Assistant",
-            description: "An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.",
-            image: "/projects/project-1.webp",
-            technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL", "Docker"],
-            github: "#",
-            demo: "#"
+            title: "Blogs Website",
+            description: "Developed a dynamic blog platform featuring engaging content and user-friendly design for seamless browsing and interaction.",
+            image: "/projects/project-1.png",
+            technologies: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", ],
+            github: "https://samadhanmanjare.github.io/Blogs/",
+            demo: "https://samadhanmanjare.github.io/Blogs/"
         },
         {
             id: 2,
-            title: "Real-time Collaborative Whiteboard",
-            description: "A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.",
-            image: "/projects/project-2.webp",
-            technologies: ["TypeScript", "WebRTC", "Socket.io", "Canvas API", "Node.js", "Redis"],
-            github: "#",
-            demo: "#"
+            title: "Ecomzy E-commerce Website",
+            description: "Developed Ecomzy, a React-based e-commerce website featuring interactive UI and basic functionality for product display and shopping cart management.",
+            image: "/projects/project-2.png",
+            technologies: [ "HTML", "CSS", "JavaScript", "React", "TailwindCSS","Node.js",],
+            github: "https://samadhanmanjare.github.io/Shopex/",
+            demo: "https://samadhanmanjare.github.io/Shopex/"
         },
         {
             id: 3,
-            title: "Blockchain Voting System",
-            description: "A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.",
-            image: "/projects/project-3.webp",
-            technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
-            github: "#",
-            demo: "#"
+            title: "Travel Recommender Pune",
+            description: "Designed a travel recommender UI for Pune using HTML and CSS, featuring a clean and responsive layout to showcase popular destinations and personalized travel suggestions.",
+            image: "/projects/project-3.png",
+            technologies: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"],
+            github: "https://nikhiljagtap03.github.io/travelrecommender.pune.github.io/",
+            demo: "https://nikhiljagtap03.github.io/travelrecommender.pune.github.io/"
         },
         {
             id: 4,
-            title: "Cloud Infrastructure Dashboard",
-            description: "A comprehensive cloud management platform for monitoring, managing, and optimizing multi-cloud infrastructure. Features real-time metrics, cost analysis, automated scaling, and security compliance monitoring across AWS, Azure, and GCP.",
-            image: "/projects/project-4.webp",
-            technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform", "React"],
-            github: "#",
-            demo: "#"
+            title: "Razorpay Clone UI",
+            description: "Developed a Razorpay clone UI using HTML, CSS, and Tailwind CSS to showcase design proficiency. The interface features a clean, responsive layout optimized for modern web applications.",
+            image: "/projects/project-4.png",
+            technologies: ["HTML", "CSS", "TailwindCSS", "JavaScript", "React"],
+            github: "",
+            demo: ""
         },
         {
             id: 5,
-            title: "Neural Network Visualizer",
-            description: "An interactive web application for visualizing, training, and experimenting with neural networks. Features drag-and-drop architecture builder, real-time training visualization, model comparison tools, and export capabilities for production deployment.",
-            image: "/projects/project-5.webp",
-            technologies: ["Python", "TensorFlow.js", "D3.js", "Next.js", "WebGL", "TypeScript"],
-            github: "#",
-            demo: "#"
+            title: "Textutils Web Application",
+            description: "Developed Textutils, a web application using HTML, CSS, and JavaScript that provides utilities to convert text to uppercase, lowercase, and clear text, showcasing a user-friendly and responsive interface",
+            image: "/projects/project-5.png",
+            technologies: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS","TypeScript",],
+            github: "https://samadhanmanjare.github.io/Textutils/",
+            demo: "https://samadhanmanjare.github.io/Textutils/"
         }
  
     ],
@@ -105,9 +105,9 @@ export const config = {
     ],
     experiences: [
         {
-            position: "Frontend Developer",
-            company: "SelectSkillSet",
-            period: "2024 - Present",
+            position: "Frontend Developer Intern",
+            company: "Next Class",
+            period: "Jan 2025 - July 2025",
             location: "Remote",
             description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
             responsibilities: [
@@ -118,34 +118,34 @@ export const config = {
             ],
             technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
         },
-        {
-            position: "Full Stack Developer",
-            company: "Tekisky",
-            period: "2023 - 2024",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
-            responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
-            ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
-        }
+        // {
+        //     position: "Full Stack Developer",
+        //     company: "Tekisky",
+        //     period: "2023 - 2024",
+        //     location: "Remote",
+        //     description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
+        //     responsibilities: [
+        //         "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
+        //         "Implemented RESTful APIs and integrated third-party services",
+        //         "Built responsive user interfaces and optimized application performance",
+        //         "Worked on database design and backend architecture"
+        //     ],
+        //     technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+        // }
     ],
     contactInfo: [
      
         {
             icon: <FaGithub className="w-5 h-5" />,
             label: "GitHub",
-            value: "@huzaifahmedz",
-            link: `https://github.com/huzaifahmedz`
+            value: "@samadhanmanjare",
+            link: `https://github.com/samadhanmanjare`
         },
         {
             icon: <HiMail className="w-5 h-5" />,
             label: "Email",
-            value: "dev.huzaif@gmail.com",
-            link: "mailto:dev.huzaif@gmail.com"
+            value: "samadhanmanjare6789@gmail.com",
+            link: "mailto:samadhanmanjare6789@gmail.com"
         },
         {
             icon: <FaMapPin className="w-5 h-5" />,

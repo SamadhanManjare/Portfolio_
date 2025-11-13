@@ -1,10 +1,9 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ onSubmit }) => {
   const {
@@ -14,23 +13,31 @@ const ContactForm = ({ onSubmit }) => {
     formState: { errors, isSubmitting },
   } = useForm();
 
-  const formRef = useRef();
-//   console.log(`env : ${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`)
-
+  // Submit handler: POST form data to server-side API which will send the email.
   const onSubmitHandler = async (data) => {
-    await onSubmit(data);
-    await emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      formRef.current,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    );
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
-    reset();
+      if (!res.ok) {
+        const payload = await res.json().catch(() => ({}));
+        throw new Error(payload.error || 'Failed to send message');
+      }
+
+      reset();
+      if (onSubmit) await onSubmit(data);
+    } catch (err) {
+      console.error('Error sending contact message:', err);
+      // rethrow so parent or react-hook-form can react to the failure
+      throw err;
+    }
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit(onSubmitHandler)} className="space-y-6">
+  <form onSubmit={handleSubmit(onSubmitHandler)} className="space-y-6">
       <div className="space-y-4">
         {/* Name and Email in a 2-column grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -43,7 +50,7 @@ const ContactForm = ({ onSubmit }) => {
               id="name"
               type="text"
               name="name"
-              placeholder="Huzaif"
+              placeholder="Samadhan"
               className="rounded-lg border-primary/20 w-full"
             />
             {errors.name && (
@@ -68,7 +75,7 @@ const ContactForm = ({ onSubmit }) => {
               id="email"
               type="email"
               name="email"
-              placeholder="huzaif@example.com"
+              placeholder="Samadhan@example.com"
               className="rounded-lg border-primary/20 w-full"
             />
             {errors.email && (
